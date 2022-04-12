@@ -15,7 +15,7 @@ const ProjectBlock = (props) => {
                 ) : (null)} 
                 </div>             
                 <div className="media">
-                    <img className="image" src={image}/>
+                    <img className="image" alt="" src={image}/>
                 </div>    
             </div>   
         </div>        
