@@ -1,0 +1,17 @@
+@use "../../assets/sass/variables.scss" as *;
+@use "../../assets/sass/typography.scss" as *;
+
+.contact{
+    font-family: $modern-content;
+    color: $font-color;//$TDbackground-color;
+    padding-top: 14rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+    .email{
+        font-family: $modern-content;
+        font-size: 1.9rem;
+        font-weight: medium;
+    }
+}

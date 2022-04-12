@@ -1,0 +1,93 @@
+@use "../../assets/sass/variables.scss" as *;
+@use "../../assets/sass/typography.scss" as *;
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade1 {
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s; /* Firefox < 16 */
+  -ms-animation: fadein 2s; /* Internet Explorer */
+  -o-animation: fadein 2s; /* Opera < 12.1 */
+  animation: fadein 2s;
+  width: 900px;
+}
+
+.fade2{
+    -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+         -moz-animation: fadein 4s; /* Firefox < 16 */
+          -ms-animation: fadein 4s; /* Internet Explorer */
+           -o-animation: fadein 4s; /* Opera < 12.1 */
+              animation: fadein 4s;
+}
+
+.home {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+.content {
+  text-align: center;
+}
+
+#home-h1 {
+  color: $font-color;
+  font-size: 5rem;
+}
+
+#home-a {
+  background-color: $button-color;
+  padding: 0.5rem;
+  border-radius: 2rem;
+  color: $TDbackground-color;
+  font-family: $modern-content;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .home {
+    margin: 0;
+  }
+  #home-h1 {
+    margin: 0.5rem;
+  }
+  .fade1 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 800px) {
+  #home-h1 {
+    text-align: center;
+  }
+}
