@@ -1,0 +1,17 @@
+@use "./variables" as *;
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;500&family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
+
+* {
+    font-family: $modern-content;
+  }
+  
+  .modern {
+    h1,
+    h2,
+    h3 {
+      font-family: $modern-header;
+    }
+  }
