@@ -59,15 +59,15 @@ svg{
     top: 0;
     width: 100%;
 }
-/*@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) {
     .nav-page{
         height: 3.5rem;
         font-size: 1.3rem;
     }
-}*/
+}
 @media only screen and (min-width: 800px) {
     .title{
-        font-size: 2rem;;
+        font-size: 2rem;
     }
     .nav-page{
         height: 5rem;
