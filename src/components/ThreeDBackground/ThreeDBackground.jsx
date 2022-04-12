@@ -73,7 +73,7 @@ const ThreeDBackground = () => {
     //sphere.rotation.x = Math.PI / 2
     sphere.position.z = 0.5;
     //sphere.position.y = -0.01;
-    if(currentPage != "contact"){
+    if(currentPage !== "contact"){
       scene.add(sphere)
     } else{
       scene.remove(sphere)

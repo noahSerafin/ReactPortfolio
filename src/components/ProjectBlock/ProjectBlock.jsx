@@ -10,7 +10,7 @@ const ProjectBlock = (props) => {
             <div className="grid">  
                 <div className="grid-text">         
                 <p className="block-p">{description}</p>
-                {link != undefined ? (
+                {link !== undefined ? (
                 <a className="site-link" href={link}>{linkText}</a>
                 ) : (null)} 
                 </div>             
