@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import Contact from "./pages/Contact/Contact";
@@ -7,6 +7,7 @@ import Graphics from "./pages/Graphics/Graphics";
 import Home from "./pages/Home/Home";
 
 function App() {
+
   return (
     <Routes>
       <Route path="/projects" element={<Projects />} />

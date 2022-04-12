@@ -5,13 +5,15 @@ import RbOff from "../../assets/media/rbOff";
 import React, { useState, useEffect } from "react";
 
 const NavBar = () => {
+    
     var [currentPage, setCurrentPage] = useState();  
     useLocation();  
 
     useEffect(() => {
+        window.scrollTo(0, 0);
         const url = window.location.href;
         const page = url.substring(url.lastIndexOf('/') + 1);
-        setCurrentPage(currentPage = page)
+        setCurrentPage(currentPage = page);        
     });      
       
     return (
