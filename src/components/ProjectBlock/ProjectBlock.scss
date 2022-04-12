@@ -1,0 +1,106 @@
+@use "../../assets/sass/variables.scss" as *;
+@use "../../assets/sass/typography.scss" as *;
+
+@media only screen and (max-width: 800px) {
+  .block {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    background-color: $transparent-background;
+    border-radius: 20px;
+    width: 90vw;
+    padding-bottom: 0.5rem;
+    text-align: center;
+  }
+  .block-title {
+    padding-top: 1rem;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .block-p {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .media {
+    width: 90vw;
+    position: relative;
+  }
+  .image {
+    height: 60vw;
+    border-radius: 15px;
+  }
+  .site-link {
+    background-color: $button-color;
+    display: inline-block;
+    text-align: center;
+    line-height: 3rem;
+    color: $background-color;
+    height: 3rem;
+    width: 7rem;
+    border-radius: 50px;
+    margin-bottom: 1rem;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .block {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    background-color: $transparent-background;
+    border-radius: 50px;
+    width: 800px;
+    height: 540px;
+  }
+  .grid {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid-text {
+    padding: 2.5rem;
+    height: 400px;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .block-title {
+    padding-top: 1rem;
+    text-align: center;
+  }
+  .block-p {
+    position: relative;
+    left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+  .media {
+    padding: 1rem;
+    height: 400px;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .image {
+    height: 80%;
+    border-radius: 10px;
+  }
+  .site-link {
+    background-color: $button-color;
+    display: inline-block;
+    text-align: center;
+    line-height: 3rem;
+    color: $background-color;
+    height: 3rem;
+    width: 7rem;
+    border-radius: 50px;
+  }
+}

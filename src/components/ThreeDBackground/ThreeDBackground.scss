@@ -1,0 +1,20 @@
+@use "../../assets/sass/variables.scss" as *;
+
+.background{
+    background: $off-background-color;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.webgl
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+    z-index: -1;
+}

@@ -1,0 +1,62 @@
+@use "../../assets/sass/variables.scss" as *;
+@use "../../assets/sass/typography.scss" as *;
+
+.navbar {
+    font-family: $modern-content;
+    background-color: $background-color;
+    color: $font-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    box-shadow: 0px -1.25rem 2.5rem rgba(97, 65, 65, 0.07);
+    border-bottom: 1px solid var(button-color);
+    z-index: 1;
+}
+.title{
+    font-family: $modern-content;
+    color: $font-color;
+    text-align: center;
+    letter-spacing: 0.3rem;
+    margin-bottom: 0;
+    margin-top: 0.1rem;
+}
+.navbar-pages {
+    margin-top: 0.3rem;
+    margin-bottom: 0.5rem;
+    width: 100vw;
+    display: flex;
+      flex: 1;
+      text-align: center;
+    justify-content: space-around;
+}
+.nav-page{
+    height: 3rem;;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $font-color;
+}
+
+a {
+    text-decoration: none;
+}
+
+input{
+    margin-top: 0.5rem;
+}
+
+svg{
+    margin-top: 0.5rem;
+    fill: $font-color;
+    color: $font-color;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}

@@ -1,0 +1,12 @@
+@use "../../assets/sass/variables.scss" as *;
+
+.youtube-embed {
+    position: sticky;
+    z-index: 2;
+    margin: auto;
+    width: 90%;
+    height: 25rem;
+    overflow: auto;
+    background-color: rgba($background-color, $alpha: 0.4);
+    transition: 0.3s ease-in-out;
+}

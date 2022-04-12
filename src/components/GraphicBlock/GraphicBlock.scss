@@ -1,0 +1,12 @@
+@use "../../assets/sass/variables.scss" as *;
+@use "../../assets/sass/typography.scss" as *;
+
+@media only screen and (min-width: 800px) {
+  .gblock-vid {      
+    height: 100%;
+  }
+  button {
+    margin: auto;
+    margin-top: 0.5rem;
+  }
+}
