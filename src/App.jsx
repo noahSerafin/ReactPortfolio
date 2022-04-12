@@ -14,6 +14,7 @@ function App() {
       <Route path="/contact" element={<Contact />} />
       <Route path="/home" element={<Home />} />
       <Route path="/" element={<Home />} />
+      <Route path="/ReactPortfolio" element={<Home />} />
     </Routes>
   );
 }
