@@ -15,24 +15,30 @@ const NavBar = () => {
         const page = url.substring(url.lastIndexOf('/') + 1);
         setCurrentPage(currentPage = page);        
     });      
-      
+    
+    const pageClass = currentPage;
+
     return (
-        <div className="navbar" id="nav">
-            <NavLink to="/home">
-                <h1 className="title">Noah Serafin</h1>          
-                <h3 className="title">Junior Developer</h3>   
-            </NavLink>      
-            <div className="navbar-pages">
-                <NavLink className="nav-page" to="/projects">Projects
-                {currentPage === "projects" ? (<RbOn />) : (<RbOff />)}                
-                </NavLink>
-                <NavLink className="nav-page" to="/graphics">Graphics
-                {currentPage === "graphics" ? (<RbOn />) : (<RbOff />)}  
-                </NavLink>                
-                <NavLink className="nav-page" to="/contact">Contact
-                {currentPage === "contact" ? (<RbOn />) : (<RbOff />)}  
-                </NavLink>                
-            </div>          
+        <div className="navbar-container">
+            <div className={`navbar nav--${pageClass}`} id="nav">
+                <NavLink to="/home">
+                    <div className="title">
+                        <h1>N<span>oah</span>S<span>erafin</span></h1>          
+                        <h3 className="title">Junior Developer</h3>   
+                    </div>
+                </NavLink>      
+                <div className="navbar__pages">
+                    <NavLink className="nav-page" to="/projects">Projects
+                    {currentPage === "projects" ? (<RbOn />) : (<RbOff />)}                
+                    </NavLink>
+                    <NavLink className="nav-page" to="/graphics">Graphics
+                    {currentPage === "graphics" ? (<RbOn />) : (<RbOff />)}  
+                    </NavLink>                
+                    <NavLink className="nav-page" to="/contact">Contact
+                    {currentPage === "contact" ? (<RbOn />) : (<RbOff />)}  
+                    </NavLink>                
+                </div>          
+            </div>
         </div>
     )
 };

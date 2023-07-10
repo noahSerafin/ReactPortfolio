@@ -447,12 +447,12 @@ const ThreeDBackground = () => {
   document.addEventListener("mousemove", animateParticles);
     let mouseX = 0;
     let mouseY = 0
-  const clock = new THREE.Clock();
-  function animation() {
+    const clock = new THREE.Clock();
+    function animation() {
     requestAnimationFrame(animation);
     const elapsedTime = clock.getElapsedTime();
-    particlesMesh.rotation.y = mouseX * (elapsedTime * 0.00008);
-    particlesMesh.rotation.x = mouseY * (elapsedTime * 0.00008);
+    particlesMesh.rotation.y = mouseX * (Math.sin(elapsedTime) * 0.00058);
+    particlesMesh.rotation.x = mouseY * (Math.sin(elapsedTime) * 0.00058);
 
     var performance = Date.now() * 0.003;
 
