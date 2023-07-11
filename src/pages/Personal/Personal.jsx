@@ -1,6 +1,5 @@
-/// Change to gallery of Shaders
-
 import React from "react";
+import './Personal.scss';
 import noise from "../../assets/media/noisey.png"
 import froggy from "../../assets/media/froggy.png"
 import gau from "../../assets/media/gau.png"
@@ -11,17 +10,15 @@ import ProjectBlock from "../../components/ProjectBlock/ProjectBlock";
 import Maze from "../../assets/media/maze.png";
 import Sphron from "../../assets/media/sphron.png";
 
-//<GraphicBlock title="Audio Reactive Shaders" description="placeholder text" media={froggy} />
+const Personal = () => { 
 
-const Graphics = () => {
     const noiseLink = "RWAgGLubH3M";
     const particleLink = "iGierBfEtrc";
     const gauLink = "S9RLBWOHaGM";
 
     return (
         <div className="page graphics">
-            <h1 className="page-title">Graphics</h1>
-            <h3 className="page-title">Experiments with Shaders</h3>
+            <h1 className="page-title">Personal Projects</h1>
             <GraphicBlock title="Noise Shaders" description="Smooth random noise displayed in 3D." media={noise} embedId={noiseLink}/>            
             <GraphicBlock title="Post Processing" description="Bloom, motion blur, stereoscopic 3D and more." media={froggy} embedId={particleLink}/>
             <GraphicBlock title="A.I. generated videos" description="Rendered in Nvidia's Gaugan A.I." media={gau} embedId={gauLink}/>
@@ -40,4 +37,4 @@ const Graphics = () => {
     )
 }
 
-export default Graphics;         
+export default Personal;
