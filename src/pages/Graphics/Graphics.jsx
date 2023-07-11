@@ -18,7 +18,7 @@ const Graphics = () => {
 
     return (
         <div className="page graphics">
-            <h1 className="page-title">Graphics</h1>
+            <h1 className="page-title">Personal Projects</h1>
             <GraphicBlock title="Noise Shaders" description="Smooth random noise displayed in 3D." media={noise} embedId={noiseLink}/>            
             <GraphicBlock title="Post Processing" description="Bloom, motion blur, stereoscopic 3D and more." media={froggy} embedId={particleLink}/>
             <GraphicBlock title="A.I. generated videos" description="Rendered in Nvidia's Gaugan A.I." media={gau} embedId={gauLink}/>

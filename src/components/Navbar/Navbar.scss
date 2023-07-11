@@ -1,6 +1,21 @@
 @use "../../assets/sass/variables.scss" as *;
 @use "../../assets/sass/typography.scss" as *;
 
+.navbar, .title, .navbar__pages, .nav-page, svg{
+    transition: all 0.5s ease-in-out;
+}
+@keyframes sdown{
+    0%{
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    50%{
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    100%{
+        clip-path: polygon(0 0, 100% 0, 100 100%, 0 100%);
+    }
+}
+
 .navbar {
     font-family: $modern-content;
     background-color:transparent;
@@ -35,6 +50,7 @@
     margin-top: 0.3rem;
     margin-bottom: 0.5rem;
    position: relative;
+   height: fit-content;
    .nav-page{    
        flex: 1;
        display: flex;
@@ -43,6 +59,7 @@
        color: $font-color;
        max-width: 70px;
        font-size: 1.4rem;
+      
     }
 }
 
@@ -83,7 +100,7 @@ svg{
         font-size: 2rem;
     }
 }
-.nav--home{
+.nav--home, .nav--ReactPortfolio, .nav--{
     transition: all 0.8s ease-in-out;
     flex-direction: column;
     justify-content: center; 
@@ -117,4 +134,24 @@ svg{
     display: flex;
     justify-content: center; 
     align-items: center;
+}
+.nav--graphics, .nav--projects, .nav--contact{
+    //animation: name duration timing-function delay iteration-count direction fill-mode;
+    //animation: sdown 2s ease-out 0s 1 forwards;
+    .navbar__pages{
+        .nav-page{
+            /*svg{
+                opacity: 0;
+                display: none;
+            }*/
+            &:hover{
+                color: $off-background-color;
+                cursor: pointer;
+                svg{
+                    opacity: 0.99;
+                    display: block;
+                }
+            }
+        }
+    }
 }

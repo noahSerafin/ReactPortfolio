@@ -24,14 +24,14 @@ const NavBar = () => {
                 <NavLink to="/home">
                     <div className="title">
                         <h1>N<span>oah</span>S<span>erafin</span></h1>          
-                        <h3 className="title">Junior Developer</h3>   
+                        <h3 className="title">Web Developer</h3>   
                     </div>
                 </NavLink>      
                 <div className="navbar__pages">
                     <NavLink className="nav-page" to="/projects">Projects
                     {currentPage === "projects" ? (<RbOn />) : (<RbOff />)}                
                     </NavLink>
-                    <NavLink className="nav-page" to="/graphics">Graphics
+                    <NavLink className="nav-page" to="/graphics">Personal
                     {currentPage === "graphics" ? (<RbOn />) : (<RbOff />)}  
                     </NavLink>                
                     <NavLink className="nav-page" to="/contact">Contact

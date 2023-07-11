@@ -451,8 +451,8 @@ const ThreeDBackground = () => {
     function animation() {
     requestAnimationFrame(animation);
     const elapsedTime = clock.getElapsedTime();
-    particlesMesh.rotation.y = mouseX * (Math.sin(elapsedTime) * 0.00058);
-    particlesMesh.rotation.x = mouseY * (Math.sin(elapsedTime) * 0.00058);
+    particlesMesh.rotation.y = mouseX * (elapsedTime * 0.00008);
+    particlesMesh.rotation.x = mouseY * (Math.abs(Math.sin(elapsedTime)) * 0.00008);
 
     var performance = Date.now() * 0.003;
 
