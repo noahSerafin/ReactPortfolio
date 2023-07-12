@@ -1,0 +1,12 @@
+@use "../../assets/sass/variables.scss" as *;
+@use "../../assets/sass/typography.scss" as *;
+
+.shader-container{
+    align-items: center;
+    height: 550px;
+    width: 100%;
+    .button--left, .button--right{
+        height: 20px;
+        width: 24px;
+    }
+}

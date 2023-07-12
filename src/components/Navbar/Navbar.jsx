@@ -23,7 +23,7 @@ const NavBar = () => {
             <div className={`navbar nav--${pageClass}`} id="nav">
                 <NavLink to="/home">
                     <div className="title">
-                        <h1>N<span>oah</span>S<span>erafin</span></h1>          
+                        <h1 className="site-header">N<span>oah</span>S<span>erafin</span></h1>          
                         <h3 className="title">Web Developer</h3>   
                     </div>
                 </NavLink>      
@@ -31,7 +31,10 @@ const NavBar = () => {
                     <NavLink className="nav-page" to="/projects">Projects
                     {currentPage === "projects" ? (<RbOn />) : (<RbOff />)}                
                     </NavLink>
-                    <NavLink className="nav-page" to="/graphics">Personal
+                    <NavLink className="nav-page" to="/personal">Personal
+                    {currentPage === "personal" ? (<RbOn />) : (<RbOff />)}  
+                    </NavLink>
+                    <NavLink className="nav-page" to="/graphics">Shaders
                     {currentPage === "graphics" ? (<RbOn />) : (<RbOff />)}  
                     </NavLink>                
                     <NavLink className="nav-page" to="/contact">Contact

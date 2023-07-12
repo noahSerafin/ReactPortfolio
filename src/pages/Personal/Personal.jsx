@@ -4,7 +4,6 @@ import noise from "../../assets/media/noisey.png"
 import froggy from "../../assets/media/froggy.png"
 import gau from "../../assets/media/gau.png"
 import kp from "../../assets/media/kpBall.png"
-import "./Graphics.scss";
 import GraphicBlock from "../../components/GraphicBlock/GraphicBlock"
 import ProjectBlock from "../../components/ProjectBlock/ProjectBlock";
 import Maze from "../../assets/media/maze.png";

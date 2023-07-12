@@ -98,13 +98,17 @@
   }
   .site-link {
     background-color: $button-color;
-    display: inline-block;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     line-height: 3rem;
     color: $background-color;
     height: 3rem;
     width: 7rem;
     border-radius: 50px;
+    padding: 0.2rem;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
   }
 }
 .site-link{
