@@ -3,20 +3,24 @@ import {useLocation} from "react-router-dom";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import React, { useState, useEffect } from "react";
+import frags from './frags';
 //import dat from "dat.gui";
 
 const ThreeDBackground = () => {
   window.addEventListener("load", init, false);
   var [currentPage, setCurrentPage] = useState();
+  var [index, setIndex] = useState(0);
+  console.log('index:', index)
   useLocation();
  
   function init() {
     createWorld();
     createPrimitive();
-    createParticles();
     pageListen();
+    createParticles();
     //createGUI();
     //---
+    scene.add(plane)
     animation();
   } 
 
@@ -57,6 +61,25 @@ const ThreeDBackground = () => {
   }
 
   //--------------------------------------------------------------------
+  const vert =`
+  uniform mat4 projectionMatrix;
+  uniform mat4 viewMatrix;
+  uniform mat4 modelMatrix;
+
+  attribute vec3 position;
+
+  void main()
+  {
+      gl_Position = projectionMatrix * viewMatrix * modelMatrix * vec4(position, 1.0);
+  }
+`
+const frag =`
+    precision mediump float;
+    
+    void main(){
+        gl_FragColor = vec4(1.0, 0.0, 0.0, 1.0);
+    }
+`;
   const VS = `
       // Copyright (c) 2011 Stefan Gustavson. All rights reserved.
       // Distributed under the MIT license. See LICENSE file.
@@ -379,6 +402,28 @@ const ThreeDBackground = () => {
     _primitive = new primitiveElement();
     scene.add(_primitive.mesh);
   }
+
+  const geometry = new THREE.PlaneGeometry(500, 500);
+  const shader = new THREE.RawShaderMaterial( {
+
+    uniforms: {
+      //time: { value: 1.0 },
+      //resolution: { value: new THREE.Vector2() }
+      /*uniform float u_time;
+      uniform vec2 u_resolution;
+      uniform vec2 u_mouse;*/
+    },
+  
+    vertexShader: vert,
+    fragmentShader: frags[0]
+  
+  } );
+  const plane =  new THREE.Mesh(geometry, shader);
+  /*plane.rotation.x = 45;
+  plane.rotation.y = 45;
+  plane.position.z = 5;*/
+  
+
   //--------------------------------------------------------------------
 
   var options = {
@@ -434,10 +479,11 @@ const ThreeDBackground = () => {
 
   //--------------------------------------------------------------------
   const pageListen = () => {
-    if(currentPage === "contact"){
+    if(currentPage === "graphics"){
       scene.remove(_primitive.mesh)
+      scene.add(plane)
     } else {
-      scene.add(_primitive.mesh)
+      //scene.add(_primitive.mesh)
     }
   }
   const animateParticles = (event) => {
@@ -455,7 +501,7 @@ const ThreeDBackground = () => {
     particlesMesh.rotation.x = mouseY * (Math.abs(Math.sin(elapsedTime)) * 0.00008);
 
     var performance = Date.now() * 0.003;
-
+    
     _primitive.mesh.rotation.y += options.perlin.vel;
     _primitive.mesh.rotation.x =
       (Math.sin(performance * options.spin.sinVel) *

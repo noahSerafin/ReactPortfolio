@@ -7,7 +7,9 @@ import aim from "../../assets/media/aim.jpg";
 import nobul from "../../assets/media/nobul.jpg";
 import OAE from "../../assets/media/OAEcrop.png";
 import Calc from "../../assets/media/calc.png";
-import Punk from "../../assets/media/punk.png";
+import Punk from "../../assets/media/punk.png"
+import bd from "../../assets/media/bd.png";
+import io from "../../assets/media/io.png";
 import "./Projects.scss";
 
 const Projects = () => {
@@ -21,6 +23,12 @@ const Projects = () => {
             linkText="go to site"
             image={rt}/>
             <ProjectBlock 
+            title="iO Tech Meetups"
+            description="A site advertising various tech talks from iO Associates" 
+            link="https://iomeetups.co.uk/"
+            linkText="go to site"
+            image={io}/>
+            <ProjectBlock 
             title="3tone Music" 
             description="React app frontend for 3tone Music Distribution." 
             link="https://www.3tonemusic.com/"
@@ -28,10 +36,16 @@ const Projects = () => {
             image={tone}/>
             <ProjectBlock 
             title="Nobul RS" 
-            description="A Recruitment website for Nobul Resourcing Solutions" 
+            description="A recruitment website for Nobul Resourcing Solutions" 
             link="https://www.nobulrs.com/"
             linkText="go to site"
             image={nobul}/>
+            <ProjectBlock 
+            title="Black Diamond" 
+            description="A fashion recruitment website for The Black Diamond Agency" 
+            link="https://www.theblackdiamondagency.com/"
+            linkText="go to site"
+            image={bd}/>
             <ProjectBlock 
             title="bb Designs" 
             description="A site for interior designer Britta Brunner" 

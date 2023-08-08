@@ -34,9 +34,7 @@ const NavBar = () => {
                     <NavLink className="nav-page" to="/personal">Personal
                     {currentPage === "personal" ? (<RbOn />) : (<RbOff />)}  
                     </NavLink>
-                    <NavLink className="nav-page" to="/graphics">Shaders
-                    {currentPage === "graphics" ? (<RbOn />) : (<RbOff />)}  
-                    </NavLink>                
+                   
                     <NavLink className="nav-page" to="/contact">Contact
                     {currentPage === "contact" ? (<RbOn />) : (<RbOff />)}  
                     </NavLink>                
@@ -47,3 +45,9 @@ const NavBar = () => {
 };
 
 export default NavBar;
+// <a className="nav-page" href="https://noahserafin.github.io/shaders/">Shaders</a>
+
+/* <NavLink className="nav-page" to="/graphics">Shaders
+                    {currentPage === "graphics" ? (<RbOn />) : (<RbOff />)}  
+                    </NavLink>
+                    */

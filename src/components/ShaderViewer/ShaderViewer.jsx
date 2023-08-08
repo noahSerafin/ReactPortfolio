@@ -338,13 +338,15 @@ void main(){
 
 
     return(
-        <div className="shader-container block">
-            <button className="button--left" onClick={leftClicked}></button>
-            
-            <button className="button--right" onClick={rightClicked}></button>
-            
+        <div >
         </div>
     );
 };
 
 export default ShaderViewer;
+/*<div className="shader-container block">
+            <button className="button--left" onClick={leftClicked}></button>
+            
+            <button className="button--right" onClick={rightClicked}></button>
+            
+        </div>*/
