@@ -7,13 +7,14 @@ import frags from './frags';
 //import dat from "dat.gui";
 
 const ThreeDBackground = () => {
-  window.addEventListener("load", init, false);
+  
   var [currentPage, setCurrentPage] = useState();
   var [index, setIndex] = useState(0);
   console.log('index:', index)
   useLocation();
  
   function init() {
+    console.log('init')
     createWorld();
     createPrimitive();
     pageListen();
@@ -446,6 +447,7 @@ const frag =`
 
   useEffect(() => { 
     //page listener 
+    window.addEventListener("load", init, false);
       const url = window.location.href;
       const urlEnd = url.substring(url.lastIndexOf('/') + 1);
       setCurrentPage(currentPage = urlEnd)
@@ -524,7 +526,7 @@ const frag =`
 
   return (
     <div className="background" id="container">
-      <canvas id="webglCanvas" className="webgl"></canvas>
+      <div id="webglCanvas" className="webgl"></div>
     </div>
   );
 };
