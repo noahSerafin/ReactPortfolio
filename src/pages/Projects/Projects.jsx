@@ -10,6 +10,7 @@ import Calc from "../../assets/media/calc.png";
 import Punk from "../../assets/media/punk.png"
 import bd from "../../assets/media/bd.png";
 import io from "../../assets/media/io.png";
+import bc from "../../assets/media/bc.png";
 import "./Projects.scss";
 
 const Projects = () => {
@@ -65,17 +66,11 @@ const Projects = () => {
             linkText="go to site"
             image={OAE}/>
             <ProjectBlock 
-            title="Punk-API" 
-            description="An API front end made in React listing available BrewDog beers with dynamic search and filter tags." 
-            link="https://noahserafin.github.io/punk-api/"
+            title="Blockchain 121" 
+            description="A site for Blockchain 121" 
+            link="http://block121dev.wpengine.com//"
             linkText="go to site"
-            image={Punk}/>
-            <ProjectBlock 
-            title="Calculator" 
-            description="A pair operation calculator made in Javascript." 
-            link="https://noahserafin.github.io/Calculator/"
-            linkText="go to site"
-            image={Calc}/>
+            image={bc}/>
         </div>
     )
 }
