@@ -17,10 +17,11 @@ const Graphics = () => {
         <div className="page graphics">
             <h1 className="page-title">Graphics</h1>
             
-            <ShaderViewer />
+            
         </div>
     )
 }
 
 export default Graphics;  
 //<h3 className="page-title">Experiments with Shaders</h3>       
+//<ShaderViewer />
