@@ -9,7 +9,7 @@ import OAE from "../../assets/media/OAEcrop.png";
 import Calc from "../../assets/media/calc.png";
 import Punk from "../../assets/media/punk.png"
 import bd from "../../assets/media/bd.png";
-import io from "../../assets/media/io.png";
+import ft from "../../assets/media/foxtek.png";
 import bc from "../../assets/media/bc.png";
 import "./Projects.scss";
 
@@ -24,11 +24,11 @@ const Projects = () => {
             linkText="go to site"
             image={rt}/>
             <ProjectBlock 
-            title="iO Tech Meetups"
-            description="A site advertising various tech talks from iO Associates" 
-            link="https://iomeetups.co.uk/"
+            title="Foxtek RS"
+            description="A Recruitment website for Foxtek Recruitment Solutions" 
+            link="https://www.foxtekrs.com/"
             linkText="go to site"
-            image={io}/>
+            image={ft}/>
             <ProjectBlock 
             title="3tone Music" 
             description="React app frontend for 3tone Music Distribution." 
