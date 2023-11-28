@@ -1,9 +1,8 @@
 {
   "files": {
     "main.css": "/ReactPortfolio/static/css/main.e4770a85.css",
-    "main.js": "/ReactPortfolio/static/js/main.f6ad99a3.js",
+    "main.js": "/ReactPortfolio/static/js/main.c01d6f39.js",
     "static/js/787.e29dc422.chunk.js": "/ReactPortfolio/static/js/787.e29dc422.chunk.js",
-    "static/media/talent.png": "/ReactPortfolio/static/media/talent.aab5a1dd7c1dbc219d84.png",
     "static/media/bd.png": "/ReactPortfolio/static/media/bd.1db62b737d86164cc018.png",
     "static/media/punk.png": "/ReactPortfolio/static/media/punk.968ba4e608d4150d4145.png",
     "static/media/gau.png": "/ReactPortfolio/static/media/gau.f9f1e53ef87d9ed9b45f.png",
@@ -21,11 +20,11 @@
     "static/media/OAEcrop.png": "/ReactPortfolio/static/media/OAEcrop.8f8ac03574df20661748.png",
     "index.html": "/ReactPortfolio/index.html",
     "main.e4770a85.css.map": "/ReactPortfolio/static/css/main.e4770a85.css.map",
-    "main.f6ad99a3.js.map": "/ReactPortfolio/static/js/main.f6ad99a3.js.map",
+    "main.c01d6f39.js.map": "/ReactPortfolio/static/js/main.c01d6f39.js.map",
     "787.e29dc422.chunk.js.map": "/ReactPortfolio/static/js/787.e29dc422.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e4770a85.css",
-    "static/js/main.f6ad99a3.js"
+    "static/js/main.c01d6f39.js"
   ]
 }
