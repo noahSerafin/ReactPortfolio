@@ -7,7 +7,7 @@ import frags from './frags';
 //import dat from "dat.gui";
 
 const ThreeDBackground = () => {
-  
+  window.addEventListener("load", init, false);
   var [currentPage, setCurrentPage] = useState();
   var [index, setIndex] = useState(0);
   console.log('index:', index)
@@ -17,11 +17,9 @@ const ThreeDBackground = () => {
     console.log('init')
     createWorld();
     createPrimitive();
-    pageListen();
     createParticles();
     //createGUI();
     //---
-    scene.add(plane)
     animation();
   } 
 
@@ -62,25 +60,9 @@ const ThreeDBackground = () => {
   }
 
   //--------------------------------------------------------------------
-  const vert =`
-  uniform mat4 projectionMatrix;
-  uniform mat4 viewMatrix;
-  uniform mat4 modelMatrix;
 
-  attribute vec3 position;
 
-  void main()
-  {
-      gl_Position = projectionMatrix * viewMatrix * modelMatrix * vec4(position, 1.0);
-  }
-`
-const frag =`
-    precision mediump float;
-    
-    void main(){
-        gl_FragColor = vec4(1.0, 0.0, 0.0, 1.0);
-    }
-`;
+
   const VS = `
       // Copyright (c) 2011 Stefan Gustavson. All rights reserved.
       // Distributed under the MIT license. See LICENSE file.
@@ -404,26 +386,6 @@ const frag =`
     scene.add(_primitive.mesh);
   }
 
-  const geometry = new THREE.PlaneGeometry(500, 500);
-  const shader = new THREE.RawShaderMaterial( {
-
-    uniforms: {
-      //time: { value: 1.0 },
-      //resolution: { value: new THREE.Vector2() }
-      /*uniform float u_time;
-      uniform vec2 u_resolution;
-      uniform vec2 u_mouse;*/
-    },
-  
-    vertexShader: vert,
-    fragmentShader: frags[0]
-  
-  } );
-  const plane =  new THREE.Mesh(geometry, shader);
-  /*plane.rotation.x = 45;
-  plane.rotation.y = 45;
-  plane.position.z = 5;*/
-  
 
   //--------------------------------------------------------------------
 
@@ -447,7 +409,7 @@ const frag =`
 
   useEffect(() => { 
     //page listener 
-    window.addEventListener("load", init, false);
+   
       const url = window.location.href;
       const urlEnd = url.substring(url.lastIndexOf('/') + 1);
       setCurrentPage(currentPage = urlEnd)
@@ -480,14 +442,7 @@ const frag =`
   }*/
 
   //--------------------------------------------------------------------
-  const pageListen = () => {
-    if(currentPage === "graphics"){
-      scene.remove(_primitive.mesh)
-      scene.add(plane)
-    } else {
-      //scene.add(_primitive.mesh)
-    }
-  }
+  
   const animateParticles = (event) => {
     mouseY = event.clientY;
     mouseX = event.clientX;
