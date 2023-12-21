@@ -18,12 +18,6 @@ const Projects = () => {
         <div className="page projects">
             <h1 className="page-title">Projects</h1>
             <ProjectBlock 
-            title="Realtime Consulting"
-            description="A Recruitment website integrated with a job posting api" 
-            link="https://www.realtimeconsultants.co.uk/"
-            linkText="go to site"
-            image={rt}/>
-            <ProjectBlock 
             title="Foxtek RS"
             description="A Recruitment website for Foxtek Recruitment Solutions" 
             link="https://www.foxtekrs.com/"
@@ -35,6 +29,12 @@ const Projects = () => {
             link="https://www.3tonemusic.com/"
             linkText="go to site"
             image={tone}/>
+             <ProjectBlock 
+            title="Blockchain 121" 
+            description="A site for Blockchain 121" 
+            link="https://www.blockchain121.com/"
+            linkText="go to site"
+            image={bc}/>
             <ProjectBlock 
             title="Nobul RS" 
             description="A recruitment website for Nobul Resourcing Solutions" 
@@ -59,18 +59,18 @@ const Projects = () => {
             link="https://www.aimhousing.co.uk/"
             linkText="go to site"
             image={aim}/>
+             <ProjectBlock 
+            title="Realtime Consulting"
+            description="A Recruitment website integrated with a job posting api" 
+            link="https://www.realtimeconsultants.co.uk/"
+            linkText="go to site"
+            image={rt}/>
             <ProjectBlock 
             title="OAE event programme" 
             description="A mobile app made with the #kapiti group at nology.io, front end built in React with a Java/firebase back end API. " 
             //link="https://noahserafin.github.io/OAE-event-programme-mock-mobile/" 
             linkText="go to site"
             image={OAE}/>
-            <ProjectBlock 
-            title="Blockchain 121" 
-            description="A site for Blockchain 121" 
-            link="http://block121dev.wpengine.com//"
-            linkText="go to site"
-            image={bc}/>
         </div>
     )
 }

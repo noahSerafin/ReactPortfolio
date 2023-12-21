@@ -8,6 +8,7 @@ import GraphicBlock from "../../components/GraphicBlock/GraphicBlock"
 import ProjectBlock from "../../components/ProjectBlock/ProjectBlock";
 import Maze from "../../assets/media/maze.png";
 import Sphron from "../../assets/media/sphron.png";
+import ms from "../../assets/media/ms.png";
 
 const Personal = () => { 
 
@@ -18,6 +19,12 @@ const Personal = () => {
     return (
         <div className="page graphics">
             <h1 className="page-title">Personal Projects</h1>
+            <ProjectBlock 
+            title="Sample Sharing Site" 
+            description="Proof of concept frontend for sharing music samples for production" 
+            link="https://noahserafin.github.io/musicsite/"
+            linkText="go to site"
+            image={ms}/>
             <GraphicBlock title="Noise Shaders" description="Smooth random noise displayed in 3D." media={noise} embedId={noiseLink}/>            
             <GraphicBlock title="Post Processing" description="Bloom, motion blur, stereoscopic 3D and more." media={froggy} embedId={particleLink}/>
             <GraphicBlock title="A.I. generated videos" description="Rendered in Nvidia's Gaugan A.I." media={gau} embedId={gauLink}/>
