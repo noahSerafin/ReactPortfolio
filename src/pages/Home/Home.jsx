@@ -20,7 +20,7 @@ const Home = () => {
     return(
         <div className="home">
             <div className="fade1">
-                <h1 id="home-h1">I am making webistes in Bristol.</h1>
+                <h1 id="home-h1">I am making websites in Bristol.</h1>
                 <div className="content">                    
                     <NavLink id="home-a"className="fade2" to="/projects">See more
                     </NavLink>
