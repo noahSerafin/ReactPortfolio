@@ -10,6 +10,7 @@ import Calc from "../../assets/media/calc.png";
 import Punk from "../../assets/media/punk.png"
 import bd from "../../assets/media/bd.png";
 import ft from "../../assets/media/foxtek.png";
+import talent from "../../assets/media/talent.jpg";
 import bc from "../../assets/media/bc.png";
 import "./Projects.scss";
 
@@ -18,8 +19,14 @@ const Projects = () => {
         <div className="page projects">
             <h1 className="page-title">Projects</h1>
             <ProjectBlock 
+            title="Talent International UK"
+            description="A job API intergrated Recruitment website Talent International UK" 
+            link="https://www.talentinternational.co.uk/"
+            linkText="go to site"
+            image={talent}/>
+            <ProjectBlock 
             title="Foxtek RS"
-            description="A Recruitment website for Foxtek Recruitment Solutions" 
+            description="A recruitment website for Foxtek Recruitment Solutions" 
             link="https://www.foxtekrs.com/"
             linkText="go to site"
             image={ft}/>
@@ -31,7 +38,7 @@ const Projects = () => {
             image={tone}/>
              <ProjectBlock 
             title="Blockchain 121" 
-            description="A site for Blockchain 121" 
+            description="A Web3 recruitment site for Blockchain 121" 
             link="https://www.blockchain121.com/"
             linkText="go to site"
             image={bc}/>
