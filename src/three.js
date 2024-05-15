@@ -2,10 +2,10 @@ import * as T from 'three';
 // eslint-disable-next-line import/no-unresolved
 //import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
-import vertex from './assets/shaders/vertexParticles.glsl';
-import fragment from './assets/shaders/fragment.glsl';
-import simVertex from './assets/shaders/simVertex.glsl';
-import simFragment from './assets/shaders/simFragment.glsl';
+import vertex from './assets/shaders/vertexParticles.js';
+import fragment from './assets/shaders/fragment.js';
+import simVertex from './assets/shaders/simVertex.js';
+import simFragment from './assets/shaders/simFragment.js';
 
 const device = {
   width: window.innerWidth,
@@ -212,7 +212,7 @@ export default class Three {
     this.material.uniforms.uPositions.value = this.fboTexture;
     this.points = new T.Points(geometry, this.material);//this.material
     this.points.position.set(0,0,-1)
-    this.points.size = 0.1;
+    this.points.size = 5.5;//bigger
     this.scene.add(this.points);
   }
 

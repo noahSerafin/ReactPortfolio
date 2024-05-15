@@ -6,7 +6,6 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router } from "react-router-dom";
 import NavBar from './components/Navbar/Navbar';
-import ThreeDBackground from './components/ThreeDBackground/ThreeDBackground';
 
 import Three from './three';
 
@@ -30,16 +29,15 @@ const root = createRoot(container)
 root.render(
   <React.StrictMode>
     <Router >
-    
-    <canvas id="canvas" class="z-[0] h-full w-full"></canvas>
+      <canvas id="canvas" class="z-[0] h-full w-full"></canvas>
       <NavBar />      
       <App />      
     </Router>
   </React.StrictMode>,
   document.getElementById("root")
 );
-//<ThreeDBackground />
 
+//<ThreeDBackground />
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
