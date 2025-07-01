@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ReactPortfolio/static/css/main.8d3755ac.css",
-    "main.js": "/ReactPortfolio/static/js/main.cb7b18bc.js",
+    "main.js": "/ReactPortfolio/static/js/main.67d626ae.js",
     "static/js/787.e29dc422.chunk.js": "/ReactPortfolio/static/js/787.e29dc422.chunk.js",
     "static/media/bd.png": "/ReactPortfolio/static/media/bd.1db62b737d86164cc018.png",
     "static/media/punk.png": "/ReactPortfolio/static/media/punk.968ba4e608d4150d4145.png",
@@ -18,6 +18,7 @@
     "static/media/RT.jpg": "/ReactPortfolio/static/media/RT.4bee601100edc6485a5e.jpg",
     "static/media/EPOShero.png": "/ReactPortfolio/static/media/EPOShero.6f65c2448ba837e57de4.png",
     "static/media/talent.jpg": "/ReactPortfolio/static/media/talent.54a00e421f1dbf5813bd.jpg",
+    "static/media/fuse.jpg": "/ReactPortfolio/static/media/fuse.b55a64a5a891e3230ca2.jpg",
     "static/media/aim.jpg": "/ReactPortfolio/static/media/aim.77888b28e7b45d80e69a.jpg",
     "static/media/britta.jpg": "/ReactPortfolio/static/media/britta.f29eec2ef0a31dcba1b2.jpg",
     "static/media/nobul.jpg": "/ReactPortfolio/static/media/nobul.f5937b542a8a06bef768.jpg",
@@ -26,11 +27,11 @@
     "static/media/OAEcrop.png": "/ReactPortfolio/static/media/OAEcrop.8f8ac03574df20661748.png",
     "index.html": "/ReactPortfolio/index.html",
     "main.8d3755ac.css.map": "/ReactPortfolio/static/css/main.8d3755ac.css.map",
-    "main.cb7b18bc.js.map": "/ReactPortfolio/static/js/main.cb7b18bc.js.map",
+    "main.67d626ae.js.map": "/ReactPortfolio/static/js/main.67d626ae.js.map",
     "787.e29dc422.chunk.js.map": "/ReactPortfolio/static/js/787.e29dc422.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8d3755ac.css",
-    "static/js/main.cb7b18bc.js"
+    "static/js/main.67d626ae.js"
   ]
 }
