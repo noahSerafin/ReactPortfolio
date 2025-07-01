@@ -34,7 +34,7 @@ const Personal = () => {
             <GraphicBlock title="Noise Shaders" description="Smooth random noise displayed in 3D." media={noise} embedId={noiseLink}/>            
             <GraphicBlock title="Post Processing" description="Bloom, motion blur, stereoscopic 3D and more." media={froggy} embedId={particleLink}/>
             <GraphicBlock title="A.I. generated videos" description="Rendered in Nvidia's Gaugan A.I." media={gau} embedId={gauLink}/>
-            <GraphicBlock title="Promotional Work" description="See more on my instagram." media={kp} link={"https://www.instagram.com/serafinsolutions/"} linkText={"see more"}/>
+            <GraphicBlock title="Promotional Work" description="See more on my instagram." media={kp} link={"https://www.instagram.com/_seraf____/"} linkText={"see more"}/>
             <ProjectBlock 
             title="Sphron" 
             description="A 3D Tron-like in development made in Unity with C#" 

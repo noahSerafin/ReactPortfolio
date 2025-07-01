@@ -11,7 +11,16 @@ const Contact = () => {
             <br></br>
             <h1>Mobile: 07961726824</h1>
             <br></br>
-            <h1>Instagram: /serafinsolutions/</h1>
+            <div>
+            <h1>Instagram: </h1>
+            <h2>
+                <a href='https://www.instagram.com/_seraf____/'>
+                    /<p>_</p>
+                        seraf
+                    <p>____</p>
+                </a>
+            </h2>
+            </div>
         </div>
     )
 }

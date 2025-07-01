@@ -6,6 +6,7 @@ import Projects from "./pages/Projects/Projects";
 import Personal from "./pages/Personal/Personal";
 import Graphics from "./pages/Graphics/Graphics";
 import Home from "./pages/Home/Home";
+import "./components/ThreeDBackground/ThreeDBackground.scss";
 
 function App() {
 

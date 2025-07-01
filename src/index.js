@@ -29,7 +29,7 @@ const root = createRoot(container)
 root.render(
   <React.StrictMode>
     <Router >
-      <canvas id="canvas" class="z-[0] h-full w-full"></canvas>
+      <canvas id="canvas" class="webgl"></canvas>
       <NavBar />      
       <App />      
     </Router>

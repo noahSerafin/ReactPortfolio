@@ -10,8 +10,12 @@ import Calc from "../../assets/media/calc.png";
 import Punk from "../../assets/media/punk.png"
 import bd from "../../assets/media/bd.png";
 import ft from "../../assets/media/foxtek.png";
+import fuse from "../../assets/media/fuse.jpg";
 import talent from "../../assets/media/talent.jpg";
 import bc from "../../assets/media/bc.png";
+import doro from "../../assets/media/dorothys.png";
+import epos from "../../assets/media/EPOShero.png";
+import out from "../../assets/media/outout.jpg";
 import "./Projects.scss";
 
 const Projects = () => {
@@ -31,17 +35,21 @@ const Projects = () => {
             linkText="go to site"
             image={ft}/>
             <ProjectBlock 
-            title="3tone Music" 
-            description="React app frontend for 3tone Music Distribution." 
-            link="https://www.3tonemusic.com/"
+            title="Fuse Group"
+            description="A recruitment website for Fuse Group" 
+            link="https://www.fuse-group.com/"
             linkText="go to site"
-            image={tone}/>
+            image={fuse}/>
              <ProjectBlock 
             title="Blockchain 121" 
             description="A Web3 recruitment site for Blockchain 121" 
             link="https://www.blockchain121.com/"
             linkText="go to site"
             image={bc}/>
+            <ProjectBlock 
+            title="EPOS Hero" 
+            description="Landing page for EPOSHero.com using the Silicon bootstrap template" 
+            image={epos}/>
             <ProjectBlock 
             title="Nobul RS" 
             description="A recruitment website for Nobul Resourcing Solutions" 
@@ -60,6 +68,20 @@ const Projects = () => {
             link="https://bbdesigns.space/"
             linkText="go to site"
             image={britta}/>
+             <ProjectBlock 
+            title="3tone Music" 
+            description="React app frontend for 3tone Music Distribution." 
+            image={tone}/>
+            <ProjectBlock 
+            title="Out Out Ibiza" 
+            description="NodeJS site for Out Out venue in Plymouth" 
+            link="https://outoutibiza.com/"
+            linkText="go to site"
+            image={out}/>
+            <ProjectBlock 
+            title="Dorothy's Diner" 
+            description="NodeJS site for Dorothy's Diner in Liverpool" 
+            image={doro}/>
             <ProjectBlock 
             title="AIM Housing" 
             description="A site for Aim Housing agency"

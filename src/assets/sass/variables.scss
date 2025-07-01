@@ -1,9 +1,12 @@
 $background-color: #353535;
-$TDbackground-color: #21282a;
-$transparent-background: rgba(53, 53, 70, 0.5);
-$off-background-color: #284b63;
-$font-color: #ffffff;
-$button-color: #d9d9d9;
+$TDbackground-color: #0D1B2A;//#21282a;
+//#1B263B rgba(53, 53, 70, 0.5);
+$off-background-color: #778DA9;//#284b63;
+$font-color: #0D1B2A;
+$button-color: #E0E1DD;//#d9d9d9;
+$transparent-background: rgba(27, 38, 59, 0.5);
+.block{color: $button-color;}
+//$transparent-background: rgba(119, 141, 169, 0.5);
 
 // General Fonts
 $sub-heading-font: "Oswald", sans-serif;
@@ -15,3 +18,12 @@ $modern-header: 'Josefin Sans', sans-serif;
 // Classic Fonts
 $classic-header: "Playfair Display", serif;
 $classic-content: "Lato", sans-serif;
+
+//new palette
+/*
+#E0E1DD
+#778DA9
+#415A77
+#1B263B
+#0D1B2A
+*/
