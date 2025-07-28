@@ -1,12 +1,13 @@
 {
   "files": {
     "main.css": "/ReactPortfolio/static/css/main.8d3755ac.css",
-    "main.js": "/ReactPortfolio/static/js/main.67d626ae.js",
+    "main.js": "/ReactPortfolio/static/js/main.56ef44bd.js",
     "static/js/787.e29dc422.chunk.js": "/ReactPortfolio/static/js/787.e29dc422.chunk.js",
     "static/media/bd.png": "/ReactPortfolio/static/media/bd.1db62b737d86164cc018.png",
     "static/media/punk.png": "/ReactPortfolio/static/media/punk.968ba4e608d4150d4145.png",
     "static/media/dorothys.png": "/ReactPortfolio/static/media/dorothys.85d92210fad0ab6954d1.png",
     "static/media/ms.png": "/ReactPortfolio/static/media/ms.71c16ee3cdb71a7475d1.png",
+    "static/media/io.png": "/ReactPortfolio/static/media/io.4d336a1aca55931c7175.png",
     "static/media/gau.png": "/ReactPortfolio/static/media/gau.f9f1e53ef87d9ed9b45f.png",
     "static/media/noisey.png": "/ReactPortfolio/static/media/noisey.6c2a9a7c419b234c4f27.png",
     "static/media/froggy.png": "/ReactPortfolio/static/media/froggy.41b5425cb274e777ce38.png",
@@ -27,11 +28,11 @@
     "static/media/OAEcrop.png": "/ReactPortfolio/static/media/OAEcrop.8f8ac03574df20661748.png",
     "index.html": "/ReactPortfolio/index.html",
     "main.8d3755ac.css.map": "/ReactPortfolio/static/css/main.8d3755ac.css.map",
-    "main.67d626ae.js.map": "/ReactPortfolio/static/js/main.67d626ae.js.map",
+    "main.56ef44bd.js.map": "/ReactPortfolio/static/js/main.56ef44bd.js.map",
     "787.e29dc422.chunk.js.map": "/ReactPortfolio/static/js/787.e29dc422.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8d3755ac.css",
-    "static/js/main.67d626ae.js"
+    "static/js/main.56ef44bd.js"
   ]
 }
