@@ -47,7 +47,7 @@ const NavBar = () => {
 export default NavBar;
 // <a className="nav-page" href="https://noahserafin.github.io/shaders/">Shaders</a>
 
-/* <NavLink className="nav-page" to="/graphics">Shaders
+/* <NavLink className="nav-page" to="/ReactPortfolio/graphics">Shaders
                     {currentPage === "graphics" ? (<RbOn />) : (<RbOff />)}  
                     </NavLink>
                     */

@@ -40,3 +40,21 @@
   position: relative;
   z-index: 8;
 }
+.page-title{
+    font-size: 4rem;
+    padding-top: 2rem;
+    margin: 2.5rem;
+}
+@media screen and (max-width: 600px){
+  .page-title{
+    font-size: 3rem;
+  }
+  .nav-page{
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 300px){
+  .page-title{
+    font-size: 2rem;
+  }
+}

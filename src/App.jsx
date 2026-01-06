@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-import { Route, Routes } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Contact from "./pages/Contact/Contact";
 import Projects from "./pages/Projects/Projects";
 import Personal from "./pages/Personal/Personal";
@@ -16,9 +16,8 @@ function App() {
       <Route path="/graphics" element={<Graphics />} />
       <Route path="/personal" element={<Personal />} />
       <Route path="/contact" element={<Contact />} />
-      <Route path="/home" element={<Home />} />
       <Route path="/" element={<Home />} />
-      <Route path="/ReactPortfolio" element={<Home />} />
+      <Route path="/home" element={<Home />} />
     </Routes>
   );
 }

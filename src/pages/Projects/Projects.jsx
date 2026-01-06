@@ -15,7 +15,9 @@ import talent from "../../assets/media/talent.jpg";
 import bc from "../../assets/media/bc.png";
 import doro from "../../assets/media/dorothys.png";
 import epos from "../../assets/media/EPOShero.png";
+import eposb from "../../assets/media/epos2.png";
 import out from "../../assets/media/outout.jpg";
+import io from "../../assets/media/io.png";
 import "./Projects.scss";
 
 const Projects = () => {
@@ -40,7 +42,7 @@ const Projects = () => {
             link="https://www.fuse-group.com/"
             linkText="go to site"
             image={fuse}/>
-             <ProjectBlock 
+            <ProjectBlock 
             title="Blockchain 121" 
             description="A Web3 recruitment site for Blockchain 121" 
             link="https://www.blockchain121.com/"
@@ -50,6 +52,12 @@ const Projects = () => {
             title="EPOS Hero" 
             description="Landing page for EPOSHero.com using the Silicon bootstrap template" 
             image={epos}/>
+            <ProjectBlock 
+            title="io Meetups" 
+            description="A site for Tech and Engineering event hosts io Meetups" 
+            link="https://www.iomeetups.com/"
+            linkText="go to site"
+            image={io}/>
             <ProjectBlock 
             title="Nobul RS" 
             description="A recruitment website for Nobul Resourcing Solutions" 
@@ -68,9 +76,15 @@ const Projects = () => {
             link="https://bbdesigns.space/"
             linkText="go to site"
             image={britta}/>
-             <ProjectBlock 
+            <ProjectBlock 
+            title="eposbuddy" 
+            description="A Webflow site for eposbuddy I made some changes to" 
+            link="https://www.eposbuddy.com/"
+            linkText="go to site"
+            image={eposb}/>
+            <ProjectBlock 
             title="3tone Music" 
-            description="React app frontend for 3tone Music Distribution." 
+            description="A React app frontend for 3tone Music Distribution" 
             image={tone}/>
             <ProjectBlock 
             title="Out Out Ibiza" 
@@ -88,7 +102,7 @@ const Projects = () => {
             link="https://www.aimhousing.co.uk/"
             linkText="go to site"
             image={aim}/>
-             <ProjectBlock 
+            <ProjectBlock 
             title="Realtime Consulting"
             description="A Recruitment website integrated with a job posting api" 
             link="https://www.realtimeconsultants.co.uk/"

@@ -1,25 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { createRoot } from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter as Router } from "react-router-dom";
+import { HashRouter as Router } from "react-router-dom";
 import NavBar from './components/Navbar/Navbar';
-
-import Three from './three';
-
-document.addEventListener('DOMContentLoaded', () => {
-  console.log('DOM')
-});
-
-window.addEventListener('load', () => {
-  const canvas = document.querySelector('#canvas');
-  console.log(canvas)
-  if (canvas) {
-    new Three(canvas);
-  }
-});
+import CanvasWrapper from './CanvasWrapper';
 
 const container = document.getElementById('root');
 const root = createRoot(container)
@@ -29,7 +15,7 @@ const root = createRoot(container)
 root.render(
   <React.StrictMode>
     <Router >
-      <canvas id="canvas" class="webgl"></canvas>
+      <CanvasWrapper />
       <NavBar />      
       <App />      
     </Router>

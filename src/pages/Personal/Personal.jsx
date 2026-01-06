@@ -9,6 +9,7 @@ import ProjectBlock from "../../components/ProjectBlock/ProjectBlock";
 import Maze from "../../assets/media/maze.jpg";
 import Sphron from "../../assets/media/sphron.png";
 import ms from "../../assets/media/ms.png";
+import dq from "../../assets/media/dq.jpg";
 
 const Personal = () => { 
 
@@ -31,6 +32,12 @@ const Personal = () => {
             link="https://noahserafin.github.io/reactMaze/"
             linkText="go to site"
             image={Maze}/>
+            <ProjectBlock 
+            title="Dataquest" 
+            description="A tactics based rogue-like work in progress made using Vue and Typscript." 
+            link="https://noahserafin.github.io/dataquest/"
+            linkText="go to site"
+            image={dq}/>
             <GraphicBlock title="Noise Shaders" description="Smooth random noise displayed in 3D." media={noise} embedId={noiseLink}/>            
             <GraphicBlock title="Post Processing" description="Bloom, motion blur, stereoscopic 3D and more." media={froggy} embedId={particleLink}/>
             <GraphicBlock title="A.I. generated videos" description="Rendered in Nvidia's Gaugan A.I." media={gau} embedId={gauLink}/>
